@@ -1,0 +1,92 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+.page-common{
+    z-index: -1;
+    position: absolute;
+    inset: 0 0;
+    width: 100%;
+
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: alpha(var(--clr-white), 1.0);
+    
+    line-height: 1.5;
+    min-height: 100vh;
+    
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    
+    overflow-x: hidden;
+
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    
+    @media (min-width: 45rem) {
+        overflow: hidden;
+    }
+}
+/* make images easier to work with */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

@@ -1,0 +1,23 @@
+.underline-indicators > *{
+    
+    cursor: pointer;
+    padding: var(--underline-gap, .5rem) 0;
+    border: 0;
+    border-bottom: .2rem solid alpha(var(--clr-white), 0);
+    background-color: transparent;
+    
+
+    &:hover, 
+    &:focus{
+        border-color: alpha(var(--clr-white), .5);
+    }
+}
+//.active{
+ //    color: alpha(var(--clr-white), 1.0);
+//     border-color: alpha(var(--clr-white), 1.0);
+//}
+.underline-indicators li.active,
+.underline-indicators > [aria-selected ='true']{
+    color: alpha(var(--clr-white), 1.0);
+    border-color: alpha(var(--clr-white), 1.0); 
+}

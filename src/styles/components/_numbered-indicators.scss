@@ -1,0 +1,37 @@
+.numbered-indicators{
+    button{
+       // padding: 1.2em;
+        border: none;
+        background-color: transparent;
+
+        color:alpha(var(--clr-white), 1.0);
+
+        border: 1px solid white;
+        border-radius: 50%;
+        min-width: 40px;
+    
+        aspect-ratio: 1 / 1;
+
+        &:hover{
+            background-color: alpha(var(--clr-white), 1.0);
+            border: 2px solid alpha(var(--clr-dark), 1.0);
+            color: alpha(var(--clr-dark), 1.0);
+        }
+    }
+    
+
+    @media (min-width: 45rem){
+        flex-direction: column;
+        min-width: 50px;
+    }
+    @media (min-width: 65rem){
+        
+        min-width: 80px;
+    }
+    
+}
+
+.numbered-indicators > [aria-selected ='true']{
+    background-color: alpha(var(--clr-white), 1.0);
+    color: alpha(var(--clr-dark), 1.0); 
+}

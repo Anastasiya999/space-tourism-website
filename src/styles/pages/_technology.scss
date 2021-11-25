@@ -1,0 +1,103 @@
+.technology {
+   
+    background-image: url(../../assets/technology/background-technology-mobile.jpg);
+
+    @media (min-width: 35rem) {
+        background-position: center center;
+        background-image: url(../../assets/technology/background-technology-tablet.jpg);
+    }
+
+    @media (min-width: 45rem) {
+        background-image: url(../../assets/technology/background-technology-desktop.jpg);
+    }
+}
+
+.grid-container--technology {
+    padding-inline: 0;
+    --flow-space: 1rem;
+    row-gap: var(--container-gap, 3rem);
+    margin-top: 15rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content';
+
+    & > picture{
+        grid-area: image;
+        max-width: 100%;
+        border-bottom: 1px solid alpha(var(--clr-white), 0.1);
+    }
+
+    .numbered-indicators{
+        grid-area: tabs;
+    }
+
+    .tech-details{
+        grid-area: content;
+        padding-inline: 1em;
+    } 
+
+   
+
+    @media (min-width: 35rem) {
+        margin-top: 10rem;
+        padding-bottom: 0;
+        grid-template-areas: 
+            'title'
+            'image'
+            'tabs'
+            'content';
+
+        .numbered-title{
+            margin-left: 2rem;
+        }
+      
+    }
+   
+    @media (min-width: 45rem) {
+        margin-top: 0rem;
+        align-items: center;
+        
+
+        grid-template-columns: 1fr auto 4fr auto;
+        justify-items: start;
+        grid-template-areas: 
+            '. title title title'
+            '. tabs content image'
+            '. tabs content image';
+
+        & > picture{
+            justify-self: end;
+            max-width: 80%;
+        }
+
+        .tech-details{
+            grid-area: content;
+            justify-self: end;
+            padding-inline: 0rem;
+            padding-bottom: 2em;
+        } 
+
+        h1{
+            align-self:end;
+        }
+
+        @media (min-width: 85rem) {
+            .tech-details{
+               // grid-area: content;
+               // justify-self: start;
+                padding-inline: 2rem;
+            } 
+            & > picture{
+            
+                justify-self: end;
+                min-width: 100%;
+            }
+        }
+
+    }
+    
+
+
+}
