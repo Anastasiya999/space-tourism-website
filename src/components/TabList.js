@@ -20,7 +20,7 @@ export default function TabList(props) {
                         aria-controls = {item.ariaControls}
                         data-image = {item.image}
                         className = {item.cName}
-                        onFocus = {()=>handleTabChange(item.id)}
+                        onClick = {()=>handleTabChange(item.id)}
                         >
                             {item.title}
                     </button>
