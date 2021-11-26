@@ -17,7 +17,7 @@ export default function NumberIndicators(props) {
                         key={item.id} 
                         aria-selected = {item.id === selectedNumber ? true : false}
                         className = {item.cName}
-                        onFocus = {()=>handleIndicatorChange(item.id)}
+                        onClick = {()=>handleIndicatorChange(item.id)}
                     >{item.title}</button>
                 )
             })}

@@ -16,7 +16,7 @@ export default function DotIndicators(props) {
                     <button
                         key={item.id} 
                         aria-selected = {item.id === selectedIndicator ? true : false}
-                        onFocus = {()=>handleIndicatorChange(item.id)}
+                        onClick = {()=>handleIndicatorChange(item.id)}
                     ><span class="sr-only">{item.title}</span></button>
                 )
             })}
