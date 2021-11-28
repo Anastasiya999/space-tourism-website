@@ -6,7 +6,8 @@
     place-items: center;
     padding: 0 1.25em;
     border-radius: 50%;
-    aspect-ratio: 1;
+    min-height: 30vh;
+    //aspect-ratio: 1;
     text-decoration: none;
     margin-top: 1rem;
 
@@ -30,5 +31,6 @@
     
     @media (min-width: 35rem){
         padding: 0 2em;
+        min-height: 35vh;
     }
 }
