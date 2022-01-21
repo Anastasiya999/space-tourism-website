@@ -22,8 +22,8 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dreamy-thompson-281bef.netlify.app/](https://dreamy-thompson-281bef.netlify.app/)
+
 
 ### Built with
 
